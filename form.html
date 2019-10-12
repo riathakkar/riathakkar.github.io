@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="form.html">
+      <h1>Add New Article</h1>
+      <div class="form-group">
+        <label for="title">Article Title</label>
+        <input type="title" class="form-control" id="exampleTitle" aria-describedby="titleHelp" placeholder="Title">
+      </div>
+      <div class="form-group">
+        <label for="name">Author Name</label>
+        <input type="name" class="form-control" id="exampleName" placeholder="Name">
+      </div>
+      <div class="row">
+        <div class="form-group" class="col-sm">
+          <label for="name">Author Name</label>
+          <br>
+          <input type="file" id="myFile" name="filename2">
+        </div>
+        <div class="form-group" class="col-sm">
+          <label for="sel1">Pages</label>
+        <select class="form-control" id="sel1">
+          <option>Academics</option>
+          <option>Sports</option>
+        </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Article Text</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label class="lead">Select Tags</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Python</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">C++</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">Java</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4">
+            <label class="form-check-label" for="inlineCheckbox3">Scala</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option5">
+            <label class="form-check-label" for="inlineCheckbox3">Perl</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+             <label for="visibility_button">Visibility</label> <br>
+               <div class="btn-group btn-group-toggle" id="visibility_button" data-toggle="buttons">
+                 <label class="btn btn-secondary active">
+                 <input type="radio" name="options" id="option1" autocomplete="off">Public</label>
+                 <label class="btn btn-secondary">
+                 <input type="radio" name="options2" id="option2" autocomplete="off">Private</label>
+               </div>
+          </div>
+
+      </div>
+      <label for="login">Login to Finish Submitting</label> <br>
+        <div class="row" id="login">
+          <div class="col-md-4">
+              <div class="form-group">
+                  <input id="username" type="text" name="username" class="form-control" placeholder="Username" required="required" data-error="Valid username is required.">
+                  <div class="help-block with-errors"></div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="form-group">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+              </div>
+          </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Remember Me</label>
+          </div>
+
+        <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Submit">
+        </div>
+    </form>
+  </body>
+</html>
